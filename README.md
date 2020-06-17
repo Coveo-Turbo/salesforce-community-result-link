@@ -63,7 +63,6 @@ The following options can be configured:
 | `hostName` | No | string | `window.location.hostname` | Specifies the host name of your Salesforce Lightning Community |
 | `name` | No | string | ` ` | Specifies the name of your Salesforce Lightning Community |
 | `protocol` | No | string | `window.location.protocol` | Specifies protocol for the clickable link |
-| `fields` | No | string | `@sfcaseid,@objecttype,@sfparentid,@sffeeditemid,@sfid,@sfcontentdocumentid,@sfideaid,@sfkbid,@sfurlname` | Fields needed to validate the proper url formatting |
 
 ## Extending
 
