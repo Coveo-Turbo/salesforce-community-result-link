@@ -34,20 +34,10 @@ export * as SalesforceCommunityResultLink from '@coveops/salesforce-community-re
 
 4. Include the component in your template as follows:
 
-Add the following script if you're serving the component independently via a CDN:
+Add the following markup to your template:
 
 ```html
-<script>
-    CoveoSalesforceCommunityResultLink()        
-</script>
-```
-
-Add the following script if you're serving the component from the project bundle using the `swapVar` utility:
-
-```html
-<script>
-    Coveo.SalesforceCommunityResultLink()        
-</script>
+<a class="CoveoSalesforceCommunityResultLink"></a>
 ```
 
 Be sure to update the variables to have the relevant information.
@@ -70,16 +60,15 @@ Extending the component can be done as follows:
 
 ```javascript
 import { SalesforceCommunityResultLink, ISalesforceCommunityResultLinkOptions } from "@coveops/salesforce-community-result-link";
-import { $$, Initialization } from 'coveo-search-ui';
 
 export interface IExtendedSalesforceCommunityResultLinkOptions extends ISalesforceCommunityResultLinkOptions {}
 
-protected applyCommunityUrlRewriter():string {
-    //some custom logic here
-    return communityUrl;
+export class ExtendedSalesforceCommunityResultLink extends SalesforceCommunityResultLink {
+    protected applyCommunityUrlRewriter():string {
+        //some custom logic here
+        return communityUrl;
+    }
 }
-
-Initialization.registerAutoCreateComponent(SalesforceCommunityResultLink);
 ```
 
 The following methods can be extended to provide additional functionalities or handle more complex use cases.

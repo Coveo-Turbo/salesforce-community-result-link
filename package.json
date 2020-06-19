@@ -1,5 +1,5 @@
 {
-    "name": "SalesforceCommunityResultLink",
+    "name": "@coveops/salesforce-community-result-link",
     "version": "1.0.0",
     "description": "",
     "main": "dist/index.js",
@@ -21,6 +21,6 @@
         "coveo-search-ui": "^2.9159.8"
     },
     "devDependencies": {
-        "@coveops/cli": "^0.7.0"
+        "@coveops/cli": "^0.8.1"
     }
 }

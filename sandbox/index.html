@@ -12,7 +12,6 @@
     <script src="component.js"></script>
     <!-- <script src="components/<name>.js"></script> -->
 
-    <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.css" />
     <link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.8864/css/CoveoFullSearchNewDesign.css" />
     <link rel="stylesheet" href="component.css" />
 
@@ -24,14 +23,6 @@
                 Analytics: {
                     searchHub: demoConfig.searchHub,
                 }
-            });
-    
-            const standaloneSearchBoxRoot = document.querySelector('.CoveoSearchInterface');
-        
-            Coveo.initSearchbox(standaloneSearchBoxRoot, demoConfig.searchUrl, {
-                Analytics: {
-                    searchHub: demoConfig.searchHub,
-                },
             });
         })
     </script>
