@@ -46,13 +46,14 @@ Be sure to update the variables to have the relevant information.
 
 The following options can be configured:
 
-| Option | Required | Type | Default | Notes |
-| --- | --- | --- | --- | --- |
-| `useAsPrintable` | No | boolean | `false` | Specifies whether to display link instead of title |
-| `enableUrlRewriter` | No | boolean | `true` | Whether to enable url rewriting logic |
-| `hostName` | No | string | `window.location.hostname` | Specifies the host name of your Salesforce Lightning Community |
-| `name` | No | string | ` ` | Specifies the name of your Salesforce Lightning Community |
-| `protocol` | No | string | `window.location.protocol` | Specifies protocol for the clickable link |
+|       Option        | Required |  Type   |          Default           |                             Notes                              |
+| ------------------- | -------- | ------- | -------------------------- | -------------------------------------------------------------- |
+| `useAsPrintable`    | No       | boolean | `false`                    | Specifies whether to display link instead of title             |
+| `enableLanguage`    | No       | boolean | `false`                    | Whether to enable Language in URL (ex: Knowledge Article)      |
+| `enableUrlRewriter` | No       | boolean | `true`                     | Whether to enable url rewriting logic                          |
+| `hostName`          | No       | string  | `window.location.hostname` | Specifies the host name of your Salesforce Lightning Community |
+| `name`              | No       | string  | ` `                        | Specifies the name of your Salesforce Lightning Community      |
+| `protocol`          | No       | string  | `window.location.protocol` | Specifies protocol for the clickable link                      |
 
 ## Extending
 

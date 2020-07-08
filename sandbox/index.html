@@ -18,10 +18,13 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {    
             Coveo.SearchEndpoint.configureCloudV2Endpoint(demoConfig.orgId, demoConfig.token, demoConfig.restUri);
-            // Coveo.SearchEndpoint.endpoints['default'].options.queryStringArguments.viewAllContent = 'true';
+            Coveo.SearchEndpoint.endpoints['default'].options.queryStringArguments.viewAllContent = 'true';
             Coveo.init(document.getElementById('search'), {
                 Analytics: {
                     searchHub: demoConfig.searchHub,
+                },
+                Searchbox: {
+                  enableQuerySyntax:true
                 }
             });
         })
