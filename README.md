@@ -32,7 +32,15 @@ const SalesforceCommunityResultLink = require('@coveops/salesforce-community-res
 export * as SalesforceCommunityResultLink from '@coveops/salesforce-community-result-link'
 ```
 
-4. Include the component in your template as follows:
+4. Or for quick testing, you can add the script from unpkg
+
+```html
+<script src="https://unpkg.com/@coveops/salesforce-community-result-link@latest/dist/index.min.js"></script>
+```
+
+> Disclaimer: Unpkg should be used for testing but not for production.
+
+5. Include the component in your template as follows:
 
 Add the following markup to your template:
 
