@@ -62,6 +62,7 @@ The following options can be configured:
 | `hostName`          | No       | string  | `window.location.hostname` | Specifies the host name of your Salesforce Lightning Community |
 | `name`              | No       | string  | ` `                        | Specifies the name of your Salesforce Lightning Community      |
 | `protocol`          | No       | string  | `window.location.protocol` | Specifies protocol for the clickable link                      |
+| `hasDetails`        | No       | boolean | `true`                     | Soecifies if idea type will be shown as detail or not          |
 
 ## Extending
 
