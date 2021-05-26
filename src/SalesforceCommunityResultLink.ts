@@ -113,7 +113,7 @@ export class SalesforceCommunityResultLink extends Component {
         } else if (result.raw.objecttype == 'Idea' && options.showIdeaDetails) {
             communityUrl = `${communityBaseUrl}/s/idea/${(result.raw.sfideaid || result.raw.sfid)}/detail`;
         } else if (result.raw.objecttype == 'Idea') {
-            communityUrl = `${communityBaseUrl}/s/idea#${(result.raw.sfideaid || result.raw.sfid)}`;
+            communityUrl = `${communityBaseUrl}/s/ideas#${(result.raw.sfideaid || result.raw.sfid)}`;
         } else if (result.raw.sfkbid) {
             communityUrl = `${communityBaseUrl}/s/article/${result.raw.sfurlname}`;
         }
